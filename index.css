@@ -1,0 +1,151 @@
+body {
+    background-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.shapes {
+    background-color: rgb(35, 33, 33);
+    height: 100vh;
+    transform: scaleX(0);
+    text-align: center;
+    
+    transition: 0.5s linear;
+}
+
+.shapes-width {
+    transform: scaleX(1);
+    width: 200px;
+}
+
+.triangle {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 86.6px solid #3498db;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    text-align: center;
+
+    cursor: move;
+}
+
+.circle {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(243, 70, 7);
+    border-radius: 50%;
+    box-shadow: 0 0 20px orangered;
+    box-shadow: 0 0 50px orangered;
+    box-shadow: 0 0 60px orangered;
+    cursor: move;
+
+}
+
+.squarers {
+    position: absolute;
+    cursor: move;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(106, 255, 0);
+    box-shadow: 0 0 20px rgb(106, 255, 0), 0 0 20px rgb(106, 255, 0);
+
+
+
+}
+
+.text-area-sahape {
+    position: relative;
+    top: -200px;
+    color: white;
+    transition: 0.9s linear;
+}
+
+.top {
+    left: 190px;
+    top: -100px;
+}
+
+
+.content {
+    width: 398px;
+    height: 398px;
+    border: 1px solid orangered;
+    color: white;
+    z-index: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+
+}
+
+.text-area-sahape .content h2 {
+    position: relative;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(52, 50, 50);
+    padding: 10px;
+}
+
+.text-area-sahape .content h2 {
+    position: relative;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(52, 50, 50);
+    padding: 10px;
+}
+
+.range-shabe {
+    position: absolute;
+    right: 500px;
+    bottom: 20px;
+}
+
+.range-number {
+    position: absolute;
+    right: 450px;
+    bottom: 20px;
+    width: 40px;
+}
+
+.input {
+    display: none;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #ffd700;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+
+
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #ffd700;
+    border-radius: 50%;
+    cursor: pointer;
+}
